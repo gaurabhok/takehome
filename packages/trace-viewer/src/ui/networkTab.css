@@ -1,0 +1,109 @@
+/*
+  Copyright (c) Microsoft Corporation.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+*/
+
+.network-request-status .status-failure {
+  color: var(--vscode-statusBar-foreground);
+  background-color: var(--vscode-statusBarItem-errorBackground);
+}
+
+.network-request-status .status-route {
+  color: var(--vscode-statusBar-foreground);
+  background-color: var(--vscode-statusBar-background);
+}
+
+.network-request-status .status-route.api {
+  color: var(--vscode-statusBar-foreground);
+  background-color: var(--vscode-statusBarItem-remoteBackground);
+}
+
+.network-request-column {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex: 0.5;
+  padding: 0 5px;
+  display: flex;
+}
+
+.network-request-start {
+  flex: 0 0 65px;
+  justify-content: right;
+  padding-right: 10px;
+}
+
+.network-request-status {
+  flex: 0 0 75px;
+}
+
+.network-request-method {
+  flex: 0 0 65px;
+}
+
+.network-request-file {
+  display: flex;
+  flex: 1;
+}
+
+.network-request-file-url {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex: 1;
+}
+
+.network-request-body .network-request-start,
+.network-request-body .network-request-status,
+.network-request-body .network-request-duration,
+.network-request-body .network-request-size {
+  justify-content: end;
+}
+
+.network-request-header {
+  margin: 3px 14px 0 5px;
+  height: 30px;
+  border-bottom: 1px solid var(--vscode-panel-border);
+  flex: none;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.network-request-header .codicon-triangle-up {
+  display: none;
+}
+.network-request-header .codicon-triangle-down {
+  display: none;
+}
+
+.network-request-header > div {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  height: 100%;
+  overflow: hidden;
+  padding: 0 5px;
+  justify-content: space-between;
+}
+
+.network-request-header > .filter-positive .codicon-triangle-down {
+  display: initial !important;
+}
+
+.network-request-header > .filter-negative .codicon-triangle-up {
+  display: initial !important;
+}
+
+.network-request-header .network-request-column {
+  border-right: 1px solid var(--vscode-panel-border);
+}
