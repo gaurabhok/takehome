@@ -115,3 +115,4 @@ This example Playwright scripts demonstrate the automation of test scenarios for
 ```shell
 npx playwright test
 ```
+
