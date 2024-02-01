@@ -1,6 +1,3 @@
-Certainly! Let's integrate the information from the previous discussion into the provided template.
-
-```markdown
 # Test Plan
 
 ## ChangeLog
@@ -94,8 +91,8 @@ Mentioned below are the Test Artifacts that will be delivered during different p
 
 List of Tools:
 
-- Selenium for automated testing
-- JMeter for performance testing
+- Playwrite for automated testing
+- K6 for performance testing
 - OWASP Zap for security testing
 
 ### 4.2 Test Environment
@@ -113,6 +110,3 @@ The minimum hardware requirements that will be used to test the Application, in 
 | AUT          | Application Under Test          |
 | API          | Application Program Interface   |
 | OWASP        | Open Web Application Security Project |
-```
-
-Feel free to further customize or add any specific details as needed for your project.

@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "markdown-notes-tree": "^1.13.0"
+  },
+  "dependencies": {
+    "tree": "^0.1.3"
+  }
+}
